@@ -6,6 +6,9 @@ body {
   min-height: 100vh;
   font: roboto;
 }
+body > * {
+  padding: 16px;
+}
 
 h2 {
   margin-top: 0;
@@ -53,10 +56,10 @@ main {
   grid-row: 2/3;
   display: grid;
   grid-template-columns: 5fr 2fr;
+  gap: 16px;
 }
 main .projects {
   grid-column: 1/2;
-  padding: 16px;
 }
 main .projects .card-container {
   display: grid;
@@ -76,20 +79,19 @@ main .info {
   flex-direction: column;
   gap: 32px;
   justify-content: space-between;
-  padding: 16px;
 }
 main .info .announcements-wrapper .announcements {
-  border: 1px solid;
   padding: 16px;
+  border: 1px solid;
 }
 main .info .announcements-wrapper .announcements .announcement:not(:last-child) {
-  border-bottom: 1px solid;
   padding-bottom: 16px;
+  border-bottom: 1px solid;
   margin-bottom: 16px;
 }
 main .info .trending-wrapper .trendings {
-  border: 1px solid;
   padding: 16px;
+  border: 1px solid;
 }
 main .info .trending-wrapper .trendings .trending:not(:last-child) {
   margin-bottom: 16px;
