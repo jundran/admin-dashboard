@@ -12,11 +12,19 @@ h2
 p, h3
   margin: 0
 
+.profile-icon
+  width: 32px
+  height: 32px
+
+.profile-icon.large
+  width: 48px
+  height: 48px
+
 header
   grid-column: 2 / 3
   display: grid
   grid-auto-rows: 1fr 1fr
-  > div
+  div
     display: flex
     justify-content: space-between
     align-items: center
@@ -69,3 +77,6 @@ main
         padding: 16px
         .trending:not(:last-child)
           margin-bottom: 16px
+        .trending
+          span
+            display: inline-block

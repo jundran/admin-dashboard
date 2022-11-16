@@ -15,12 +15,22 @@ p, h3 {
   margin: 0;
 }
 
+.profile-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.profile-icon.large {
+  width: 48px;
+  height: 48px;
+}
+
 header {
   grid-column: 2/3;
   display: grid;
   grid-auto-rows: 1fr 1fr;
 }
-header > div {
+header div {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -83,6 +93,9 @@ main .info .trending-wrapper .trendings {
 }
 main .info .trending-wrapper .trendings .trending:not(:last-child) {
   margin-bottom: 16px;
+}
+main .info .trending-wrapper .trendings .trending span {
+  display: inline-block;
 }
 
 /*# sourceMappingURL=styles.css.map */
