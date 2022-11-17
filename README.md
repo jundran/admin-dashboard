@@ -20,3 +20,7 @@ https://materialdesignicons.com/
 
 ## Colours - Sky Palette
 https://tailwindcss.com/docs/customizing-colors
+
+## Font
+Google's Roboto font - self hosted  
+Source: https://google-webfonts-helper.herokuapp.com/fonts/roboto?subsets=latin
