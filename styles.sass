@@ -167,3 +167,21 @@ main
           display: block
       span:last-of-type
         color: $card-text-light
+
+@media(max-width: 950px)
+  body
+    grid-template-columns: 1fr
+  header
+    grid-column: 1 / -1
+    font-size: 0.75rem
+    padding: 8px
+    .actions
+      flex-direction: column
+      :nth-child(2)
+        margin: 8px
+      button
+        font-size: inherit
+  .sidebar
+    grid-row: 2 / 3
+  main
+    grid-template-columns: 1fr

@@ -189,4 +189,30 @@ main .info .trending span:last-of-type {
   color: #555;
 }
 
+@media (max-width: 950px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+  header {
+    grid-column: 1/-1;
+    font-size: 0.75rem;
+    padding: 8px;
+  }
+  header .actions {
+    flex-direction: column;
+  }
+  header .actions :nth-child(2) {
+    margin: 8px;
+  }
+  header .actions button {
+    font-size: inherit;
+  }
+  .sidebar {
+    grid-row: 2/3;
+  }
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
