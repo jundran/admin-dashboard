@@ -9,7 +9,7 @@ $sky700: #0369A1
 $sky800: #075985
 $sky900: #0C4A6E
 
-$sidebar-colour: $sky700
+$sidebar-colour: $sky600
 $header-colour: $sky50
 $main-colour: $sky100
 $card-colour: $sky50
@@ -18,14 +18,11 @@ $card-text-light: #555
 body
   margin: 0
   display: grid
-  grid-template-columns: 300px 4fr
+  grid-template-columns: 300px 1fr
   min-height: 100vh
   font-family: roboto, sans-serif
   > *
     padding: 16px
-
-h2
-  margin-top: 0
 
 p, h3
   margin: 0
@@ -49,6 +46,7 @@ ul
 header
   grid-column: 2 / 3
   display: grid
+  gap: 16px
   background: $header-colour
   font-size: 1.2rem
   font-weight: 700
@@ -78,7 +76,7 @@ header
     margin-right: 24px
     img
       margin-right: 24px
-    div
+    div, span
       display: block
       span:first-of-type
         font-size: 60%
@@ -88,14 +86,13 @@ header
     button
       background: $sidebar-colour
       width: 100px
-      height: 3em
+      height: 2.75em
       border: none
       border-radius: 3em
       color: #fff
       font-weight: inherit
 
 .sidebar
-  grid-column: 1 / 2
   grid-row: 1 / 3
   background: $sidebar-colour
   color: #fff
@@ -118,15 +115,11 @@ header
     margin-top: 48px
 
 main
-  grid-column: 2 / 3
-  grid-row: 2 / 3
   display: grid
   grid-template-columns: 5fr 2fr
   gap: 16px
-  padding-top: 32px
   background: $main-colour
   .projects
-    grid-column: 1 / 2
     .card-container
       display: grid
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
@@ -139,8 +132,6 @@ main
         border-left: 10px solid orange
         border-radius: 10px
         box-shadow: 5px 5px 5px #ccc
-        .card-title
-          font-weight: 700
         p
           color: $card-text-light
         .actions
@@ -151,33 +142,28 @@ main
           > *
             margin: 0 8px
   .info
-    grid-column: 2 / 3
     display: flex
     flex-direction: column
     gap: 32px
-    .announcements
+    .announcements, .trendings
       padding: 16px
       background: $card-colour
       border-radius: 10px
       box-shadow: 5px 5px 5px #ccc
-      .announcement:not(:last-child)
-        padding-bottom: 16px
-        border-bottom: 1px solid #ccc
-        margin-bottom: 16px
-        p
-          color: $card-text-light
-    .trendings
-      padding: 16px
-      background: $card-colour
-      border-radius: 10px
-      box-shadow: 5px 5px 5px #ccc
-      .trending:not(:last-child)
-        margin-bottom: 16px
-      .trending
-        display: flex
-        align-items: center
+    .announcement:not(:last-child)
+      padding-bottom: 16px
+      border-bottom: 1px solid #ccc
+      margin-bottom: 16px
+      p
+        color: $card-text-light
+    .trending:not(:last-child)
+      margin-bottom: 16px
+    .trending
+      display: flex
+      align-items: center
+      div
+        margin-left: 16px
         span
           display: block
-          margin-left: 16px
-        span:last-of-type
-          color: $card-text-light
+      span:last-of-type
+        color: $card-text-light

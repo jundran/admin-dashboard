@@ -17,3 +17,6 @@ https://materialdesignicons.com/
 <a href="https://www.flaticon.com/free-icons/cow" title="cow icons">Cow icons created by Freepik - Flaticon</a>  
 <a href="https://www.flaticon.com/free-icons/owl" title="owl icons">Owl icons created by Freepik - Flaticon</a>  
 <a href="https://www.flaticon.com/free-icons/dog" title="dog icons">Dog icons created by Freepik - Flaticon</a>  
+
+## Colours - Sky Palette
+https://tailwindcss.com/docs/customizing-colors
