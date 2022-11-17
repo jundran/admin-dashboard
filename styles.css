@@ -1,7 +1,7 @@
 body {
   margin: 0;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 300px 4fr;
   grid-template-rows: 1fr 4fr;
   min-height: 100vh;
   font: roboto;
@@ -16,6 +16,12 @@ h2 {
 
 p, h3 {
   margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 .profile-icon {
@@ -42,12 +48,31 @@ header div {
 .sidebar {
   grid-column: 1/2;
   grid-row: 1/3;
+  background: #0c4a6e;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
 }
-.sidebar ul {
-  list-style: none;
-  margin-bottom: 16px;
+.sidebar p, .sidebar li {
+  display: flex;
+  align-items: center;
 }
-.sidebar ul li:nth-last-child(3) {
+.sidebar p .mdi, .sidebar li .mdi {
+  font-size: 130%;
+}
+.sidebar p {
+  font-size: 2rem;
+}
+.sidebar p .text {
+  margin-left: 13px;
+}
+.sidebar li {
+  margin-bottom: 8px;
+}
+.sidebar li .text {
+  margin-left: 24px;
+}
+.sidebar li:nth-last-child(3) {
   margin-top: 48px;
 }
 
@@ -89,14 +114,14 @@ main .info .announcements-wrapper .announcements .announcement:not(:last-child) 
   border-bottom: 1px solid;
   margin-bottom: 16px;
 }
-main .info .trending-wrapper .trendings {
+main .info .trendings-wrapper .trendings {
   padding: 16px;
   border: 1px solid;
 }
-main .info .trending-wrapper .trendings .trending:not(:last-child) {
+main .info .trendings-wrapper .trendings .trending:not(:last-child) {
   margin-bottom: 16px;
 }
-main .info .trending-wrapper .trendings .trending span {
+main .info .trendings-wrapper .trendings .trending span {
   display: inline-block;
 }
 
